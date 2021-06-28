@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  pre_build: # ビルド実行前に実行する処理等の設定
+    commands:
+      - yarn install
+  build: # ビルド実行処理等の設定
+    commands:
+      - yarn build
+artifacts:
+  files:
+    - "**/*"
+  base-directory: "build"

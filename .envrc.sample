@@ -1,0 +1,4 @@
+export TOKEN=
+export OWNER=
+export REPO=
+export S3BUCKET=
